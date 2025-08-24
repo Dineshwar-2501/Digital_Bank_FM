@@ -24,7 +24,9 @@
   src: url('./Public_Sans/static/PublicSans-Light.ttf ') format('woff');
 }
 
-
+.shadow{
+  box-shadow: 0px 1px 3px black;
+}
 .c-gradient{
   background: linear-gradient(200deg, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
   border: none;
@@ -61,13 +63,14 @@
     z-index: -1;
     
 }
-.responsive-text {
-  font-size: clamp(1rem, 2vw, 2rem);
-}
+
 button,a:hover{
   cursor:pointer;
 
 }
+
+
+
 .ul:hover{
   text-decoration: underline;
 
@@ -78,8 +81,13 @@ body{
   padding: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
-  /* max-width: 1200px; */
+  line-height: 1.5;
   font-family: 'PublicSans', sans-serif !important;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+a:focus, button:focus {
+  outline: 2px solid #00aaff;
+  outline-offset: 2px;
 }
 
 @media screen  and (min-width:992px){
