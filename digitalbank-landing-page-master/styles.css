@@ -49,8 +49,9 @@
 .pattern{
   
  margin-left:0%;
-  margin-top: -40%; 
+  margin-top: -5%; 
   left: 0%;
+  right: 0%;
   top: -25%;
   overflow: hidden;
   z-index: -2;
@@ -80,7 +81,8 @@ body{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+
   line-height: 1.5;
   font-family: 'PublicSans', sans-serif !important;
   font-size: clamp(1rem, 2vw, 2rem);
@@ -88,6 +90,12 @@ body{
 a:focus, button:focus {
   outline: 2px solid #00aaff;
   outline-offset: 2px;
+}
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+  
 }
 
 @media screen  and (min-width:992px){
