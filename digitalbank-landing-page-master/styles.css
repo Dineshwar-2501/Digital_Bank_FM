@@ -1,4 +1,4 @@
-@media(max-width:1000px){
+
 .c-t-n31{
   top:-31% ;
 
@@ -8,8 +8,8 @@
   
 }
 .c-px{
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   
 }
 .c-fs-50{
@@ -18,15 +18,12 @@
 .c-fs-15{
   font-size: 15px;
 }
-}
+
 @font-face { 
   font-family: 'PublicSans';
   src: url('./Public_Sans/static/PublicSans-Light.ttf ') format('woff');
 }
 
-body {
-  font-family: 'PublicSans', sans-serif !important;
-}
 
 .c-gradient{
   background: linear-gradient(200deg, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
@@ -49,15 +46,19 @@ body {
 }
 .pattern{
   
-  margin-left: -10%;
-  margin-top: -40%;
+ margin-left:0%;
+  margin-top: -40%; 
+  left: 0%;
+  top: -25%;
   overflow: hidden;
+  z-index: -2;
 
 }
 .phone{
-    margin-top: -77%;
-    margin-left: 10%;
+    margin-top: -100%;
+    margin-left: 5%;
     overflow: hidden;
+    z-index: -1;
     
 }
 .responsive-text {
@@ -72,10 +73,18 @@ button,a:hover{
 
 }
 
-*{
+body{
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
+  /* max-width: 1200px; */
+  font-family: 'PublicSans', sans-serif !important;
 }
 
+@media screen  and (min-width:992px){
+  .h{
+    height: 11.5rem;
+  }
+  
+}
